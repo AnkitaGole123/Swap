@@ -8,10 +8,10 @@ public class Swapper {
         System.out.println(getSwap(swap,0,2));
     }
     public static List<Integer> getSwap(List<Integer> numbers, int i, int j){
-          int a = numbers.get(i);
-          int b = numbers.get(j);
-          numbers.set(j,a);
-          numbers.set(i,b);
+
+          int a = numbers.get(j);
+          numbers.set(j,numbers.get(i));
+          numbers.set(i,a);
           return numbers;
         }
 
